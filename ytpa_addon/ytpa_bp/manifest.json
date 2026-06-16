@@ -1,0 +1,21 @@
+{
+    "format_version": 3,
+    "header": {
+        "name": "pack.name",
+        "description": "pack.description",
+        "uuid": "67306e99-8a55-42ab-8887-60dfbf2b9580",
+        "version": "1.0.0",
+        "min_engine_version": "1.21.0"
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "f8d49aad-fd07-4fc5-9af9-c0588b35dbf2",
+            "version": "1.0.0"
+        }
+    ],
+    "metadata": {
+        "authors": ["Your Name"],
+        "product_type": "addon"
+    }
+}
