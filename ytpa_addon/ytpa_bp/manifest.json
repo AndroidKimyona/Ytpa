@@ -6,16 +6,33 @@
         "uuid": "67306e99-8a55-42ab-8887-60dfbf2b9580",
         "version": "1.0.0",
         "min_engine_version": "1.21.0"
-    },
+        },
     "modules": [
         {
             "type": "data",
             "uuid": "f8d49aad-fd07-4fc5-9af9-c0588b35dbf2",
             "version": "1.0.0"
+        },
+        {
+            "type": "script",
+            "language": "javascript",
+            "uuid": "d6bb4c5e-e7fc-4918-835c-485c539b86cb",
+            "entry": "scripts/main.js",
+            "version": "1.0.0"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.14.0"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "1.2.0"
         }
     ],
     "metadata": {
-        "authors": ["Your Name"],
-        "product_type": "addon"
-    }
+            "authors": ["AndroidKimyona"],
+            "product_type": "addon"
+        }
 }

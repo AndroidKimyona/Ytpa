@@ -1,0 +1,24 @@
+- CREDITS FOR YTPA -
+
+
+INDIVIDUALS;
+* AndroidKimyona, Developer
+- Code Manipulation & Review, Prompter, 2D Artist, Leader, Rigger, Translator, Beta-Tester
+
+AI MODELS;
+* Kimi K.2 (Moonshot AI), Co-Worker
+- Code Generation, Brainstormer, Beta-"Tester", Assistant/Feedback Provider
+
+* Gemini (Google), Helper
+- Brainstormer, Assistant/Feedback Provider
+
+All inspirations/external "yoinking" goes to:
+FapCraft/Jenny Mod, by Trolmastercard/Schnurri (for... Well, making me create this Add-On in first place)
+Actions & Stuff, by Oreville Studios (for inspiring the fluid animation style)
+Anime Waifus, by Virtualblack8 (for helping me out with the JSON UI and JavaScript logic)
+Anime Characters, by Xione (same inspiration/"yoinking" from Anime Waifus and Jenny Mod)
+
+
+YTP Add-On is under TBMMX's FOSS-alike Conduct Code. Check "LICENCE" file for more information.
+
+-- AndroidKimyona ★

@@ -80,6 +80,16 @@
           "minecraft:cake"
         ]
       },
+      "minecraft:inventory": {
+        "container_type": "horse",
+        "inventory_size": 8,
+        "private": false
+      },
+"minecraft:rideable": {
+  "seat_count": 1,
+  "family_types": ["player"],
+  "interact_text": "action.interact.open"
+},
       "minecraft:behavior.tempt": {
         "priority": 2,
         "speed_multiplier": 0.5,

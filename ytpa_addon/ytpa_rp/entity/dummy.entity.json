@@ -12,19 +12,20 @@
       "geometry": {
         "default": "geometry.humanoid"
       },
-      "animations": {
-        "bob": "animation.humanoid.bob",
-        "move": "animation.humanoid.move",
-        "look_at_target": "animation.humanoid.look_at_target.default"
-      },
-      "scripts": {
-        "animate": [
-          "bob",
-          "look_at_target",
-          { "move": "query.modified_move_speed > 0.1" }
-        ]
-      },
-      "render_controllers": ["controller.render.default"],
+"animations": {
+  "bob": "animation.humanoid.bob",
+  "move": "animation.humanoid.move",
+  "look_at_target": "animation.humanoid.look_at_target.default",
+  "walk": "animation.dummy.walk",
+  "movement_controller": "controller.animation.dummy.movement"
+},
+"scripts": {
+  "animate": [
+    "movement_controller",
+    "look_at_target"
+  ]
+},
+      "render_controllers": ["controller.render.dummy"],
       "spawn_egg": {
         "texture": "spawn_egg",
         "texture_index": 2
