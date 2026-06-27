@@ -1,5 +1,6 @@
 {
   "ui_defs": [
-    "ui/dummy_inventory.json"
+    "ui/dummy_inventory.json",
+    "ui/wardrobe_screen.json"
   ]
 }

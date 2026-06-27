@@ -51,10 +51,7 @@
     },
     "components": {
       "minecraft:type_family": {
-        "family": [
-          "player",
-          "npc"
-        ]
+        "family": ["player", "npc"]
       },
       "minecraft:health": {
         "value": 20,
@@ -85,11 +82,6 @@
         "inventory_size": 8,
         "private": false
       },
-"minecraft:rideable": {
-  "seat_count": 1,
-  "family_types": ["player"],
-  "interact_text": "action.interact.open"
-},
       "minecraft:behavior.tempt": {
         "priority": 2,
         "speed_multiplier": 0.5,
@@ -120,34 +112,22 @@
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
-      },
-      "minecraft:conditional_bandwidth_optimization": {}
+      }
     },
     "events": {
       "minecraft:on_tame": {
         "add": {
-          "component_groups": [
-            "ytpa:tamed"
-          ]
-        },
-        "remove": {
-          "component_groups": [
-            "ytpa:sitting"
-          ]
+          "component_groups": ["ytpa:tamed"]
         }
       },
       "ytpa:sit": {
         "add": {
-          "component_groups": [
-            "ytpa:sitting"
-          ]
+          "component_groups": ["ytpa:sitting"]
         }
       },
       "ytpa:stand": {
         "remove": {
-          "component_groups": [
-            "ytpa:sitting"
-          ]
+          "component_groups": ["ytpa:sitting"]
         }
       }
     }

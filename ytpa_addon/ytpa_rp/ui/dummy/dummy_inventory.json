@@ -1,0 +1,345 @@
+{
+  "namespace": "dummy",
+  "horse_screen@common.inventory_screen_common": {
+    "$close_on_player_destroyed": true,
+    "$screen_background_texture": "textures/ui/background",
+    "controls": [
+      {
+        "root_panel": {
+          "type": "panel",
+          "size": [
+            176,
+            200
+          ],
+          "controls": [
+            {
+              "bg": {
+                "type": "image",
+                "texture": "textures/ui/background",
+                "size": [
+                  176,
+                  200
+                ],
+                "alpha": 0.9
+              }
+            },
+            {
+              "title": {
+                "type": "label",
+                "text": "Your Stupid Character",
+                "offset": [
+                  0,
+                  -85
+                ],
+                "color": "$title_text_color",
+                "layer": 10
+              }
+            },
+            {
+              "paper_doll_panel": {
+                "type": "panel",
+                "offset": [
+                  -55,
+                  -50
+                ],
+                "size": [
+                  40,
+                  50
+                ],
+                "controls": [
+                  {
+                    "paper_doll": {
+                      "type": "paper_doll",
+                      "size": [
+                        32,
+                        40
+                      ],
+                      "offset": [
+                        0,
+                        0
+                      ],
+                      "rotation": [
+                        20,
+                        30,
+                        0
+                      ],
+                      "zoom": 1.2,
+                      "layer": 5
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "stats_panel": {
+                "type": "panel",
+                "offset": [
+                  20,
+                  -50
+                ],
+                "size": [
+                  80,
+                  50
+                ],
+                "controls": [
+                  {
+                    "hearts_row": {
+                      "type": "panel",
+                      "offset": [
+                        0,
+                        0
+                      ],
+                      "size": [
+                        80,
+                        10
+                      ],
+                      "controls": [
+                        {
+                          "heart_1": {
+                            "type": "label",
+                            "text": "\\uE200",
+                            "offset": [
+                              0,
+                              0
+                            ],
+                            "color": [
+                              1,
+                              0,
+                              0
+                            ],
+                            "layer": 5
+                          }
+                        },
+                        {
+                          "heart_2": {
+                            "type": "label",
+                            "text": "\\uE200",
+                            "offset": [
+                              8,
+                              0
+                            ],
+                            "color": [
+                              1,
+                              0,
+                              0
+                            ],
+                            "layer": 5
+                          }
+                        },
+                        {
+                          "heart_3": {
+                            "type": "label",
+                            "text": "\\uE200",
+                            "offset": [
+                              16,
+                              0
+                            ],
+                            "color": [
+                              1,
+                              0,
+                              0
+                            ],
+                            "layer": 5
+                          }
+                        },
+                        {
+                          "heart_4": {
+                            "type": "label",
+                            "text": "\\uE200",
+                            "offset": [
+                              24,
+                              0
+                            ],
+                            "color": [
+                              1,
+                              0,
+                              0
+                            ],
+                            "layer": 5
+                          }
+                        },
+                        {
+                          "heart_5": {
+                            "type": "label",
+                            "text": "\\uE200",
+                            "offset": [
+                              32,
+                              0
+                            ],
+                            "color": [
+                              1,
+                              0,
+                              0
+                            ],
+                            "layer": 5
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "affection_bar": {
+                      "type": "panel",
+                      "offset": [
+                        0,
+                        15
+                      ],
+                      "size": [
+                        80,
+                        8
+                      ],
+                      "controls": [
+                        {
+                          "affection_bg": {
+                            "type": "image",
+                            "texture": "textures/ui/experience_bar_background",
+                            "size": [
+                              80,
+                              5
+                            ],
+                            "layer": 1
+                          }
+                        },
+                        {
+                          "affection_fill": {
+                            "type": "image",
+                            "texture": "textures/ui/experience_bar_progress",
+                            "size": [
+                              80,
+                              5
+                            ],
+                            "layer": 2,
+                            "color": [
+                              1,
+                              0.4,
+                              0.8
+                            ]
+                          }
+                        },
+                        {
+                          "affection_label": {
+                            "type": "label",
+                            "text": "Affection",
+                            "offset": [
+                              0,
+                              8
+                            ],
+                            "font_scale_factor": 0.8,
+                            "color": [
+                              1,
+                              0.6,
+                              0.9
+                            ],
+                            "layer": 3
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "buttons_panel": {
+                "type": "panel",
+                "offset": [
+                  0,
+                  -15
+                ],
+                "size": [
+                  60,
+                  40
+                ],
+                "controls": [
+                  {
+                    "top_button@common.button": {
+                      "size": [
+                        50,
+                        16
+                      ],
+                      "offset": [
+                        0,
+                        -10
+                      ],
+                      "layer": 5,
+                      "controls": [
+                        {
+                          "top_btn_label": {
+                            "type": "label",
+                            "text": "Modal",
+                            "font_scale_factor": 0.8,
+                            "color": [
+                              1,
+                              1,
+                              1
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "bottom_button@common.button": {
+                      "size": [
+                        50,
+                        16
+                      ],
+                      "offset": [
+                        0,
+                        10
+                      ],
+                      "layer": 5,
+                      "controls": [
+                        {
+                          "bottom_btn_label": {
+                            "type": "label",
+                            "text": "Inventory",
+                            "font_scale_factor": 0.8,
+                            "color": [
+                              1,
+                              1,
+                              1
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "inventory_grid": {
+                "type": "grid",
+                "offset": [
+                  0,
+                  30
+                ],
+                "size": [
+                  80,
+                  40
+                ],
+                "grid_dimensions": [
+                  4,
+                  1
+                ],
+                "grid_item_template": "common.inventory_slot",
+                "collection_name": "armor_items",
+                "layer": 5
+              }
+            },
+            {
+              "close_button@common.close_button": {
+                "offset": [
+                  70,
+                  -90
+                ],
+                "layer": 10
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

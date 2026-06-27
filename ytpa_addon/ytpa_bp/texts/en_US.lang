@@ -1,2 +1,9 @@
 pack.name=Wiki Behaviour Pack
 pack.description=A Ghostly Guide
+item.ytpa:hammer=Martelo
+entity.ytpa:dummy.name=Dummy
+entity.ytpa:wardrobe.name=Armário
+entity.ytpa:wardrobe_drawer_big.name=Gaveta Grande
+entity.ytpa:wardrobe_drawer_left.name=Gaveta Esquerda
+entity.ytpa:wardrobe_drawer_right.name=Gaveta Direita
+action.interact.open=Abrir

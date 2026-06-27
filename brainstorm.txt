@@ -1,0 +1,337 @@
+MCPE (mais usuário de celular)
+É um add-on: BP-RP.
+O tema é virtual pet/visual novel-alike. Você tem um personagem onde você cuida/namora ele. Aí você ganha pontos de relação e afins 
+Sistemas novos, UI JSON (sabe-se Ore UI, me nego em usar essa merda de Ore UI), JavaScript.
+Já mexi com comandos de Mine antes, só que de forma bem simples. Não sei os mais avançados, como /execute. Sobre programação, não sei muito, então vai ser complicado... Mas tranquilo.
+Já fazia uns add-ons usando o AM (Add-ons Maker), então já tenho alguma noção de como é um add-on de Minecraft.
+
+Inclusive, eu tenho um setup:
+Ibis Paint
+Blockbench
+E MT Manager.
+
+Não uso IDE porque acho complexo e confuso demais, além de alguns como o Bridge travarem mais do que serem utilizáveis em geral.
+
+E não, eu não tenho PC. Eu sou uma pobre (/jk) que só tem um celular, olhos e um crânio de Figueredo.
+
+E eu tenho uma Wiki me pra ajudar, que é a Bedrock Wiki. Muito boa, por sinal.
+
+
+[...]
+
+Bem... O namoro é bem... Namoro mesmo.
+Na verdade, eu originalmente me baseiei naquele mod polêmico de Java, mas... Eh, não vou entrar em detalhes.
+Só que eu me inspirei mais na liberdade desse mod mesmo.
+Aí eu pensei em fazer algo similar ao mod em Java, só que no Bedrock. Então ele supostamente teria coisas diferentes do que pensam em "namorada virtual" no MCPE. Normalmente pensam em sistema similar aos cães e gatos: você alimenta eles para ganharem vida e serem domados. Nesse caso, é além disso.
+Você "doma"/amiga com eles e você inicia sua relação com o personagem.
+Aí dependendo do quanto você progride, você desbloqueia ações diferentes. Variam de coisas mais simples como dança ou abraço para coisas mais íntimas, como um cafuné ou um beijo.
+Só não sei como eu faria isso... Mas não duvide do JavaScript, MoLang e APIs.
+Aí você pode também fazer um armário, que você pode armazenar itens específicos, vestir o boneco ou o seu também... É um armário, armário mesmo.
+
+Aí você pode dar coisas pra ele que afetam a relação com o personagem, dar comida, dormir com ele... Enfim, é pra ser supostamente algo bem complexo e completo.
+
+Além de um outro sistema simplesmente maluco que eu realmente nem sei se dá... Onde você pode trocar o modelo do personagem (não posso falar além disso, mas deu pra entender), e mudar a personalidade e afins dele. Nome dele, seu nome, dar regras de preposição (title, lower, upper, case)... É realmente um namorado virtual próprio, tá ligado?
+É (atualmente) temático de um personagem que eu gosto, mas ainda sim, vai dar pra explorar muita coisa. (Inclusive, o nome YTPA significa "Your [nome do personagem] Pal Add-on")
+"Mas o que tem de errado nisso? JavaScript resolve as preposições". Se fosse só isso, beleza. Mas lembra das personalidades? Elas mudam as animações, textos e qualquer forma de interação.
+Exemplo: se ele é grumpy nível 1, e você decide conversar com ele, a forma que ele interage e age nas animações é diferente de um kind nível 1. Não me pergunte a lógica de eu ter pensado nisso, eu sou uma masoquista. /jk
+
+
+Novamente, é tudo ideias... Não tenho a mínima ideia se isso tudo é possível, mas não duvido.
+E sobre a cama... Tô pensando em fazer uma pra resolver o sistema maldito da cama ser dois modelos e fazer uma cama que é um modelo que é uma cama de casal... Ou algo assim, ainda não sei, porque eu só sei que trabalhar com portas, camas ou qualquer modelo que são 2 blocos em 1 são um inferno de mexer... 💔
+
+E se liga nos meus life hacks: pra roupa, vou fazer o mesmo sistema que a armadura faz: um bloco semi-transparente inflável.
+Quer um nekomimi? Vai ser um render controller ou algo assim. Vai preencher uma textura pré existente no modelo que por padrão é invisível. Quando você abrir o modelo, você vai ver blocos finos na cabeça e costas. Elas são o limite de textura de detalhes extras envolvendo orelha e rabo (cauda), e afins também.
+Inclusive, como o mod que eu me baseiei é desnecessariamente bem feito, mas bem... Não Minecraft vanilla (não é quadrado), vou me inspirar no fato do modelo ser bem completo (com animações faciais, mais movimentações), porém mantendo a vibe vanilla, quadrada. E também porque o mod que eu me inspirei... O modelo é bem feito e tals... Mas aquilo não é Minecraft, tendeu? Ele é cheio de curvas minúsculas, detalhes extras que só pesam no modelo... Sérião, eu vejo o peso do modelo... Quase 1MB, o modelo. Cabem mais de 10, 20 Steves dentro desse modelo, cara. E eu não quero isso. Vou fazer os modelos o mais vanilla possível. Um modelo que você olha e pensa: "caralho, e não é que isso seria algo que a Mojang lançaria não?"
+
+Inclusive, lembra que eu falei que eu sou masoquista?
+
+Eu tive a brilhante ideia de fazer sistemas de câmeras pras ações. E eu pensei: "como eu vou fazer o player agir nas animações sem parece um boneco duro sem vida??"
+
+E eu pensei em um sistema Ragnarok. E pra pessoa aparecer bonitinho, ela teria que ABRIR O ADD-ON, e mexer no modelo e textura no player dela do jeito que ela quisesse... Eu sou maluca. 😀
+
+[...]
+
+Inclusive, falando do que eu falei antes... Aquele projeto suicida é pra supostamente funcionar até que versão? Eu sou bem rigorosa com compatibilidade...
+Minha dúvida é... Tudo que eu sugeri foi criado em que versão?
+Exemplo: se um sistema é de 1.16, mas um é da 1.18 e mais nenhum outro, o Add-on só funciona em Mine 1.18 acima.
+
+[...]
+
+Na verdade, eu pensei nas ações funcionaram via entidades... Existem 4-8 entidades que são câmeras. Elas são todas as posições e ângulos que você souber da existência.... Ou talvez uma câmera que você possa mover a onde quiser? Eh....
+E também tem uma coisa: lembra do mod que eu me baseiei? Seu modelo mexe com a animação. No Bedrock, fazer isso é uma carta de suicídio. Por isso minha ideia de fazer um modelo customizável, tendeu? Tipo... Pra ficar bonito as animações e combinar com o modelo do boneco, que é mais detalhado, eu pensei em fazer um modelo onde o próprio player pode se implementar do jeito que ele quiser.
+Pra isso, ele tem que abrir o RP.
+
+[...]
+
+Sobre o modelo, eu pensei assim:
+O player por padrão nesse caso é uma cópia do player mesmo, só que com a estrutura do parceiro (então tem juntas: joelho, cotovelo... Enfim)
+Aí se o player quisesse adicionar mais coisa no próprio modelo, mudar as animações... Ele baixaria um módulo(?) onde ele mexe nessa área e o seu modelo nas animações é personalizável.
+
+[...]
+
+Inclusive, só de observação pra você... Eu sou rigorosamente chata com acessibilidade, personalização e otimização. Isso inclui versões, escolhas de customização e APIs compatíveis com tal versão com apenas o necessário.
+No meu caso, tô testando tudo com um CancunF e... O Minecraft 1.21... Patch 132, eu acho. Tipo, 1.21.132.
+
+No meu caso, eu queria que meu add-on funcione na forma final no mínimo 1.21.x ou 1.19.x. o que eu queria era no mínimo 1.19.x, mas acho difícil.
+E provavelmente não farei compatibilidade com versões acimas, como a 1.22 (chamada pela Mojang de 1.26) e possíveis lançamentos beta ou drops, como os drops da 1.22/1.21 final envolvendo remodelagem dos filhotes, a qual eu pessoalmente gostei.
+
+E sobre o X, o meu ideal é 0, mas pode ser qualquer patch também. Além disso, a 1.22 é extremamente cadelinha da Ore UI, a qual sou totalmente contra. Por isso não estou pensando em fazer atualizações para 1.22+. Esse novo layout é horrível, dá aquele travamento antes de carregar as coisas (esqueci o nome), além de ser feio, genérico e sem vida. É como um Material 3, além de ser não modificável sem patching (hardcoded), e eu odeio conteúdo closed source com toda a minha alma. Eu realmente odeio muito. Muito, muito mesmo, e acredito que quem apoia closed source é alguém contra o conhecimento virtual, o que inclui a liberdade e segurança virtual que um conteúdo AOSP/FOSS não tem... Enfim.
+
+[...]
+
+(não implementei ainda)
+
+Porque o meu problema é que o addon vai ser bem complexo mesmo, então eu vou precisar mexer com variáveis, animações com base nessas variáveis, vai ter expressões complexas.... Ai, vai ser sofrido, tendeu?
+
+Então pra previnir, eu vou ter que me casar com o controller, praticamente. Já já vou fazer meu recém noivado, por sinal, viu. /jk
+
+Porque vai ter coisa envolvendo dating simulator, então vai ter mudança de aparência/modelo, mood, personalidade estilo moe gap... Então imagina.
+
+São mais de 10 moods (humor, tipo feliz, triste, bravo e misturas, como, enojado, assustado e até curioso), 8 formas de customização corporal envolvendo sexo (homem, mulher, inter, null; para o top e bottom), + 10 tipos de roupas, 6 tipos de armaduras (as do vanilla mesmo: couro, ferro, ouro, diamante, netherita pra 1.16, cobre pra 1.20/1.21), 4 tipos de vestimenta de armadura e roupa (cabeça, peito, perna, pé), 10 tipos de moe gap/personalidade, incluindo 3 formas de acontecer (exemplo: durante atos românticos, agir de forma haji, em geral, agir de forma tsun e em outro estado, agir de forma sem filtro/barulhenta), E 4x4 TIPOS DE NÍVEL DE AFINAÇÃO (A-positivo, A-negativo, B-positivo, B-negativo, onde cada um são 4 níveis).... É pedir pra eu endoidar, não?
+
+E lembrando, tudo isso que eu falei afeta diálogos, animações... Tudo de visual que você encontrar no addon, tudo que você anota no mundo (resource local) e no resource global que vou implementar afetará tudo. Incluindo quem tem o addon ou não.
+
+E o controller ajuda muito nisso... E o JavaScript então... Vou fazer um trisal, se for assim. A maluca, o controller e a API.
+
+E sobre os níveis de afinação, são formas diferentes de conseguir a afinação. Cada um é alinhado a um humor específico.
+
+A envolve visceral, B envolve emocional. Eu me baseiei em algo similar ao Teaching Feeling. (sim, *aquele* visual novel)
+
+A forma que você trata ele afeta sua relação além de só "eu te amo/eu te odeio"
+               B+
+                 |
+                 |
+A- ————|———— A+
+                 |
+                 |
+                B-
+
+Esse diagrama aí.
+
+E agora vamo fazer um cálculo maroto...
+
+Lembra dos números que falei antes sobre o sistema de personalização? Se pegarmos eles... Quantas animações, renderers e modelos terei que fazer para tudo ser implementado de forma fluida e funcional?
+
+E lembre-se: o humor afeta a animação também. Então um tsun happy é diferente de um haji happy e por aí vai... (socorro)
+E o humor é afetado pelas suas ações com o personagem. Então se você demorar demais pra dar carinho nele e ele for uma personalidade mais carente (tipo o B positivo), ele pode ficar triste.
+
+
+E como você pode levar pro A ou B negativo... Vamos dizer que não há restrição para as ações que você pode fazer com base na afinidade...
+Ou seja, se você quiser, você pode tentar beijar o personagem ainda no nível 0... Mas eu recomendo não.
+
+E pra a animação facial, eu não sei explicar o método, mas é aquele de jogos antigos, tá ligado? Os rostos ficam dentro da cabeça do modelo. E as roupas serão via inflação de blocos.
+
+E lembrando, "mais de 10" significa >=10. Não é exatamente 10, então pode ser 15, 20, 69... As roupas, moods e personalidades e afins não possuem número fixo. Eu falo 10 pra facilitar, só que não vai ser só 10 roupas, por exemplo. E roupa eu quero dizer set de roupa. Tipo 4 partes de uma roupa de maid, duas partes de um bikini, duas partes pra uma roupa de nekomimi... (S-O-S, estou indo para o hospício em breve ⚠️⚠️ /jk)
+
+E pras formas de personalidade, são 3 diferentes pra cada área diferente da relação. Podem ser iguais ou não, mas não são totalmente idênticas. Se você não quer que ele por exemplo se comporte feliz em todos os atos, você pode configurar isso.
+O que isso significa?
+Há ~30 formas de configurar os 3 sets.
+
+Ah, e eu me esqueci dos blocos pras expressões, né?
+
+Bem... Vai ter umas 3/5 overlays pro olho (brilho, coração, afim), duas sombrancelhas, duas escleras, duas pupilas, 5 bocas por aí, mais emanatas (estilo anime mesmo, como aquelas linhas roxas, veias saltando, exclamação, coração ao redor do rosto... Presumo que sejam 7 tipos de partículas diferentes), e uma suicida (esse você ignora, porque sou eu).
+Ah, e quando eu falo duas pupilas, duas escleras... Eu quero dizer que uma é a pupila esquerda, uma é a direita... Tendeu?
+
+"Por que tudo isso????"
+
+Porque eu quero mostrar que é possível fazer um add-on no mesmo nível de um mod Java. Mesmo que eu arranque meus cabelos, surte, vire o Coringa do avesso... Eu vou falar "chupa" pra todo mundo que não acreditou... Pra todo mundo que acha que addon é resource pack que troca foto de pintura e bloco... Que é adicionar uma espada de rubi... Mandar o "Leck mich im Arsch" pra todo mundo.
+
+[...]
+
+Na verdade, vamo pensar mais aqui...
+
+O que faz um NPC bom em ataque? Porque quando eu coloquei um husk pra comer o boneco na porrada, ele nem teve tempo pra atacar e foi moggado.
+
+A minha ideia era fazer ele agir igual um player. Se ele tiver com uma arma no inventário dele por exemplo, ele pode pôr nele, atacar por trás quando tomar dano e fazer o famoso ataque > desvia, ou detectar outros métodos de defesa, tipo um escudo no inventário e usar ele pra atacar ao detectar inimigos. Se ele encontrar um atrás dele, ele de alguma forma tem que fazer eles ficar na frente... Sei lá-
+
+[...]
+
+E também, eu pensei em duas IAs: a dos pets e uma humana IA 4K em HD sem vírus atualizada 2069.
+
+Sobre a humana, eu quero dizer aquela com strolling mais inteligente.
+
+Ele interage com o ao redor, pode sentar em blocos (se ele encontra um bloco maior que o onde ele está e for seguro/não dá dano, ele pode sentar nele), ele pode fazer ações e afins.
+Resumo: NPC de RDR.
+E "sentar" eu quero dizer automaticamente fazer a ação de sentar ao detectar um bloco mais alto do que o chão dele e se ele escolher sentar.
+
+Por exemplo: se ele tá no chão e tem um bloco de madeira e um cacto colocado no chão, ele pode sentar no bloco de madeira e evitar o cacto.
+
+[...]
+
+Bem... O primeiro feature que eu pensei primeiramente foi do personagem ter um nome que ele pode te chamar, e de formas customizadas.
+Case-sensitive, uppercase, lowercase e outro que esqueci. Mas é aquele que a primeira alerta é maiúscula se é no início de uma frase.
+
+Se você por exemplo escreveu pro personagem te chamar de "mestre", e você pôr o último que falei, vai ficar assim:
+
+<NPC> Mestre, você está bem?
+
+Ao invés de:
+
+<NPC> mestre, você está bem?
+
+Tendeu?
+
+Ou, tipo:
+
+<NPC> Como você tá, mestre?
+
+Ao invés de:
+
+<NPC> Como você está, Mestre?
+
+Aí a maluca aqui também pensou em pronomes. Pra tipo "meu mestre" vs "minha mestre". Teria feminino, masculino e neutro, que não tem muitos pronomes, ou é mais masculino (tipo "meu mestre" ao invés de só "mestre" ou "caro mestre")
+
+E lembra do que eu falei que eu sou maluca? Eu sou masoquista também.
+
+Aí eu pensei: "e se tiver múltiplos idiomas?" :3 (mas acho que o .lang vai tirar 30% do meu sofrimento nisso daí)
+
+[...]
+
+Que tal fazer como nos antigos apps, e fazer tipo os values de apps Android? Possuem variação de um arquivo em idioma diferente.
+
+Ah, e o seu NPC pode ter gênero diferente também. Na minha ideia, o seu NPC pode ter um gênero diferente (exemplo: transgênero)
+
+
+
+Eu avisei que eu era maluca.
+
+E sim, eu pensei em tudo. Tem pronome personalizado também (com direito a variação por idioma), mas acho que esse daí vai ser um capeta de fazer.
+
+Imagina: em português, é "ela" e em inglês é "xie".
+
+Também dá pra trocar o sexo do NPC. Tipo... Literalmente o sexo, o modelo dele. E também é personalizável.
+Tem a parte de cima (top) e de baixo (bottom), com variações msc - int - fem. Exemplo: top tem bottom masc, vulgo... Aquela palavra japonesa lá. Isso seria feito com múltiplos blocos inflados do modelo, tipo o que o Mine faz para mostrar nossa armadura.
+
+Ah™, e lembra do que eu disse de ser muito complexo?
+Tem sistema de temas.
+Se você quer coisas mais leves ou não, você configura no módulo das configurações do add-on em si. Você clica na engrenagem e mexe naquele scrollzinho. Ele tem bastante em add-on de shader.
+
+E sobre o "pesado/leve"... Eu quero me referir a aquelas coisas, porque o Add-on não vai ser 100% SFW... Mas aí eu não vou entrar em detalhes por motivos óbvios. Mas esse é um dos menores problemas daí.
+Os modos alteram os textos e ações disponíveis, também.
+
+E sobre a troca de sexo lá que eu falei, eu pensei em fazer isso usando texturas específicas (se top fem, ativar textura do fem no topo) ou micro-modelos, ou algo assim. Também pode ser o que jogos fazem com partículas... Elas ficam dentro do modelo. E é controlado por um... Item!! :3
+Aí tem 3/4 modos: SFW, o não-SFW, um que é os dois... E um que os dois + coisas mais "pesadas" que não vale a pena mencionar.
+
+[...]
+
+Sobre o conteúdo não family friendly... Simplesmente é viável que vai existir. Não tem como reclamar.
+Então a única opção é um modo SFW mesmo. E porque, novamente... Eu quero testar o nível de moralidade e maturidade da comunidade.
+
+Eu quero ver se vão chamar o addon de ruim só porque tem "conteúdo impróprio" (enquanto aplaudem mod com violência gráfica), ou se é por algo genuinamente compreensível tipo um bug satânico que mata seu mundo).
+
+E sobre marketplace, MCPEDL/Curseforge... Existe a configuração SFW por isso 😭 
+
+E pra não ter saco com essas big techs aí, eu vou publicar versões PURAMENTE SFW. Porque eu sei que pôr configuração não vai ser o bastwnte. Só pra não me irritarem.
+E pra quem só quer a parte sus ou os dois, eu vou publicar na LoversLab.
+
+E não, eu não quero Marketplace. Eu na verdade odeio isso. Quase tudo lá é pago e eu não quero ser vista como alguém gananciosa ou algo oficial ou formal demais. A minha ideia é ser um add-on divertido pra quem gosta do conteúdo e que possam zuar junto, e não algo afiliado com a Mojang. :/
+
+
+E caso você queira saber, a minha inspiração inicial pro add-on foi... Aquele mod polêmico lá, de uma tal de Jenny... Tá ligado.
+Porque mesmo sendo... Né? Conteúdo, o mod é incrivelmente bem feito. Os modelos são bonitos (mesmo que não pareçam modelo vanilla, sendo menos cúbicos e mais curvados), você percebe um carinho inserido no mod. Além de sistemas de customização que é difícil de ver em conteúdo assim.
+
+E porque a própria comunidade não family friendly do Bedrock é uma bosta. Se você abrir o próprio LoverLabs, você só vê resource pack que trocam texturas de blocos e quadros por conteúdo inapropriado. Tipo... Só isso que dá pra fazer no Bedrock? Uma troca de textura? Enquanto os mods de Java contém a coisa mais incrível que você pode imaginar?
+
+Como alguém que nunca pôde tocar em Java real, num PC que eu realmente pudesse usar por mim e não só PC da sala de informática ou uma lan house, por falta de dinheiro, um dispositivo aceitável e como alguém que ama a comunidade Android e de celular com toda a minha alma, isso me machucou muito.
+
+E sobre minha maturidade com essas coisas... Não vou afirmar que sou corporalmente alguém que devia estar vendo essas coisas, mas que eu sei no mínimo 50% do que envolve, eu sei muito bem, e não desejo ser julgada por uma informação estúpida como um mísero número em meu RG.
+
+E não tente ligar muito comigo com a verificação deles. Grande parte é burra e pede ano de nascimento. Dá pra falsificar de uma forma ridícula, e também é só eu não mencionar minha idade. Porque eu sei que vão me chamar de "viciada/doente/sofreu abuso/delulu" se descobrirem.
+
+Eu sinceramente fico muito puta quando vêem alguém como eu só dessa forma. Como se não tivessem estabilidade suficiente pra entender que aquilo é só um conteúdo de dopamina "tabu", sendo que nem tabu a parte mainstream devia ser. Não tem nada de errado em saber desse conteúdo. Ao não ser que você queira virar o adulto irresponsável que faz uma gravidez indesejada na mulher porque não sabe a existência de camisinha e nunca o ensinaram sobre sexo protegido e ovulação. Isso é irresponsabilidade, não ensinamento.
+
+E sobre a área imprópria, eu não tô falando que eu quero que me ajude sobre, só quero te informar que o addon em si não é puro. Só isso. A parte mais pesada, eu resolvo eu mesma. Só quero ajuda com a lógica e implementação, pois não sei como. É que nem pedir pra um designer te escrever um código em Python. O cara nasceu na parte front, não na back. E eu não sou end, mesmo que eu deseje muito ser full-stack. Por isso tô pedindo sua ajuda desde o começo. Eu quero sua opinião e sua ajuda com a parte backend. É apenas isso que te peço que faça. Portanto que não ignore tudo que eu disse antes também... Não precisa entrar em detalhes, só não ignore elas.
+
+[...]
+
+ScriptAPI vai ser útil, né?
+
+Ah, e lembra que o addon vai ser complexo? Bem...
+Envolve modificação de modelos, módulos e personalização via tinkering, o que significa que você vai ter que abrir .mcpack...
+E lembra dos itens que não precisa de receita? Eles envolvem modificação de animações E DO MODELO do personagem. Aí por exemplo tem uma varinha mágica que interfere na personalidade do personagem, a qual modifica qualquer interação que você tenha com ele... É isso envolve as animações. Ou seja: vou ter que me noivar com o animation controllers 💔
+
+E sobre o tinkering, ele vai ser um módulo opcioa l qie você pode se inserir nas animações do add-on, quentem sistema de POV.
+Aí eu não sei como faço pra aparecer. O modelo com quem também tem os add-ons: ou o modelo só aparece pro cara, ou ele é um skin morph.
+
+
+"Por que você quer fazer isso?"
+
+Por dois motivos:
+
+1. Eu sou masoquista.
+
+2. Eu quero demonstrar a força que o MCPE tem que se assemelhe a um mod. Pois quase todo usuário de Java fala que MCBE (principalmente de celular) só tem addon ruim porque é em C++ e que todo user de celular "se compensa com qualquer coisa/não joga bem".
+
+E sobre o pov, eu quero dizer, uh... Seu pov e o do personagem. (Lembra que o addon não é 100% family-friendly? Então...-)
+
+E sobre a customização do modelo do boneco, eu quero dizer modificações físicas. Seja o sexo (literalmente, sexo biológico mesmo. Cromossomos), ou outros traços (roupas, orelhinhas...)
+
+Sobre a parte das roupas, estou pensando num tweak similar a como as armaduras funcionam.... Block inflation!!!
+
+E se meu masoquismo e o Bedrock permitir... Eu tive a brilhante ideia™ de fazer um sistema de IA pro NPC onde ele tem vida própria. Que nem NPC do RDD, sabe? Aí você pode configurar a IA dele também. Aí ele pode se trocar de roupa por si, interagir com você por si, pedir coisas (que no jogo são interpretadas como quests opcionais que aumentam seu nível de afinidade; por exemplo: ele falou contigo que quer um bolo. Dentro do código, isso vira uma missão. E se você der o bolo pra ele, ele vai ficar muito feliz contigo e ganhar mais pontos de afinação do que se você não tivesse dado o bolo em um momento que ele não pediu nada de bolo).
+
+[...]
+
+É, mas é que ter que ir nas configurações do mundo, ativar cheats, abrir o mundo de novo... É chato, não?
+Não tem nem a ver com as conquistas, é porque pro cara ter que jogar, ele tem que saber que só funciona com cheats... Aí quando descobre, tem que fazer todo o passo de fechar o mundo, abrir a configuração, ativar o cheats, abrir o mundo...
+
+[...]
+
+Na verdade... Você ganha os item pelo livro.
+Ele é na verdade um JSON UI que age como um livro, então eu acho que dá pra usar /function de boa.
+Vai ter uma área pra quem quer itens extras, como o de debug, as configs e configurar a persistência dos itens por outro item...
+
+Tipo... Vai ter dois itens de configuração: um pro uso geral no mundo, e um pro comportamento do personagem (porque sim, o jogo vai ser um... Dating simulator)
+
+E nas configurações geral, vai ter esses negócios aí. O livro vai ser o único que permanece, porque ele é literalmente um tutorial e quick links... Ou um comando própio resolveria? Abre o chat e escreve /tutorial? Ainda tô pensando...
+
+[...]
+
+Sobre o item no mundo, é pra... Bem, pra caos você queria config local no mundo.
+E pra evitar algum erro, o item fica sempre com você. Sempre.
+Morreu? Vai receber /give. Droppou? /give. Deu /clear? BARRA GIVE.
+Esse gancho vai ser feito talvez com MoLang ou JS. Toda vez que for detectado a falta do item no inventário, vai apitar um /function que devolve o item de config e outros necessários.
+
+E pra usuários survival, vai ter receitas também! Incluindo praqueles itens que nem precisam. Praqueles que dão preset como o app de config, não precisa. E o item nem é stackable, então por que você precisaria de +1?
+
+E se você já tiver um, se ele detectar mais de um, ou ele mete /clear [nome do item] ou se tiver só um, ele ignora o comando de /give.
+
+E pra evitar alguém ficar puto ("porque essa merda não some???"), eu vou dar um readme pra ele é um item de debug opcional para ganhar os itens sem receitas no survival por uma senha simples. A senha é a "abracadabra". Ele ganha todos os itens. E caso ele queira eles de volta porque perdeu, se eu conseguir implementar que o player já colocou a senha antes, ele pode conseguir de volta por um botão no item de debug rapidamente, sem precisar da senha de novo. Isso é pra evitar quem fez sem querer. E a senha vai ficar visível no menu. É tipo "a chave tá aqui. Abre a porta se quiser".
+
+[...]
+
+YESSSSSSS
+É porque meu add-on vai ser meio, uh... Não vai ser 100% family-friendly, tá ligado?
+Aí pra quem não quer essas coisas (seja porque quer usar com amigo ou multiplayer mesmo), você pode alternar entre os conteúdos do jeito que você quiser, incluindo só a parte family-friendly.
+
+E eu também queria outras infos globais que não requer um item no mundo, onde as configurações só ficam naquele mundo, tá ligado?
+
+[...]
+
+Não, tipo... Sabe aquele menu que você pode pôr?
+Agora dá pra pôr mais coisa?????
+Eu só achava que dava pra pôr um slider e só. O resto que se foda.
+Agora tem textfield, toggle, dá pra pôr mais do que só um... Vou fazer a festa kkkkk
+
+[...]
+
+Dá pra pôr MAIS coisa no subpack????? Yessss (eu pensando no meu add-on cheio de configs que eu finalmente posso pôr)
+
+[...]
+
+Sobre o modelo, eu pensei assim:
+O player por padrão nesse caso é uma cópia do player mesmo, só que com a estrutura do parceiro (então tem juntas: joelho, cotovelo... Enfim)
+Aí se o player quisesse adicionar mais coisa no próprio modelo, mudar as animações... Ele baixaria um módulo(?) onde ele mexe nessa área e o seu modelo nas animações é personalizável.
+
+[...]
+
+Na verdade, eu pensei nas ações funcionaram via entidades... Existem 4-8 entidades que são câmeras. Elas são todas as posições e ângulos que você souber da existência.... Ou talvez uma câmera que você possa mover a onde quiser? Eh....
+E também tem uma coisa: lembra do mod que eu me baseiei? Seu modelo mexe com a animação. No Bedrock, fazer isso é uma carta de suicídio. Por isso minha ideia de fazer um modelo customizável, tendeu? Tipo... Pra ficar bonito as animações e combinar com o modelo do boneco, que é mais detalhado, eu pensei em fazer um modelo onde o próprio player pode se implementar do jeito que ele quiser.
+Pra isso, ele tem que abrir o RP.
+
+[...]
+
+
+
+Com certeza colei a mesma mensagem sem querer, mas eu quero que se foda AKDKAKDKAKDKSK
+Eu lembro que tem mensagem que mandei pro Gemini, mas de novo... I don't give a fuck anymore. </3

@@ -1,0 +1,170 @@
+{
+  "namespace": "wardrobe",
+  "wardrobe_screen": {
+    "type": "screen",
+    "controls": [
+      {
+        "root_panel": {
+          "type": "panel",
+          "size": [256, 166],
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "controls": [
+            {
+              "background": {
+                "type": "image",
+                "texture": "textures/ui/wardrobe/background",
+                "size": ["100%", "100%"]
+              }
+            },
+            {
+              "title": {
+                "type": "label",
+                "text": "§l§dWardrobe",
+                "offset": [0, -75],
+                "anchor_from": "top_middle",
+                "anchor_to": "top_middle",
+                "color": [1.0, 1.0, 1.0]
+              }
+            },
+            {
+              "buttons_panel": {
+                "type": "stack_panel",
+                "orientation": "vertical",
+                "offset": [-70, 0],
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle",
+                "size": [80, 120],
+                "controls": [
+                  {
+                    "big_button": {
+                      "type": "button",
+                      "size": [70, 30],
+                      "controls": [
+                        {
+                          "big_label": {
+                            "type": "label",
+                            "text": "Big Drawer",
+                            "color": [1.0, 0.8, 0.0]
+                          }
+                        }
+                      ],
+                      "button_mappings": [
+                        {
+                          "from_button_id": "button.menu_select",
+                          "to_button_id": "wardrobe.big_drawer",
+                          "mapping_type": "pressed"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "left_button": {
+                      "type": "button",
+                      "size": [70, 30],
+                      "controls": [
+                        {
+                          "left_label": {
+                            "type": "label",
+                            "text": "Left",
+                            "color": [1.0, 1.0, 0.0]
+                          }
+                        }
+                      ],
+                      "button_mappings": [
+                        {
+                          "from_button_id": "button.menu_select",
+                          "to_button_id": "wardrobe.left_drawer",
+                          "mapping_type": "pressed"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "right_button": {
+                      "type": "button",
+                      "size": [70, 30],
+                      "controls": [
+                        {
+                          "right_label": {
+                            "type": "label",
+                            "text": "Right",
+                            "color": [1.0, 1.0, 0.0]
+                          }
+                        }
+                      ],
+                      "button_mappings": [
+                        {
+                          "from_button_id": "button.menu_select",
+                          "to_button_id": "wardrobe.right_drawer",
+                          "mapping_type": "pressed"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "config_button": {
+                      "type": "button",
+                      "size": [70, 20],
+                      "controls": [
+                        {
+                          "config_label": {
+                            "type": "label",
+                            "text": "⚙️ Config",
+                            "color": [0.0, 0.6, 1.0]
+                          }
+                        }
+                      ],
+                      "button_mappings": [
+                        {
+                          "from_button_id": "button.menu_select",
+                          "to_button_id": "wardrobe.config",
+                          "mapping_type": "pressed"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "wardrobe_image": {
+                "type": "image",
+                "texture": "textures/ui/wardrobe/wardrobe_preview",
+                "size": [100, 100],
+                "offset": [50, 0],
+                "anchor_from": "right_middle",
+                "anchor_to": "right_middle"
+              }
+            },
+            {
+              "close_button": {
+                "type": "button",
+                "size": [20, 20],
+                "offset": [115, -70],
+                "anchor_from": "top_right",
+                "anchor_to": "top_right",
+                "controls": [
+                  {
+                    "close_label": {
+                      "type": "label",
+                      "text": "✕",
+                      "color": [1.0, 0.0, 0.0]
+                    }
+                  }
+                ],
+                "button_mappings": [
+                  {
+                    "from_button_id": "button.menu_select",
+                    "to_button_id": "button.menu_exit",
+                    "mapping_type": "pressed"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

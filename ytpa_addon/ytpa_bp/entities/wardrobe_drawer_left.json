@@ -1,0 +1,52 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ytpa:wardrobe_drawer_left",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "wardrobe_drawer",
+          "furniture",
+          "inanimate"
+        ]
+      },
+      "minecraft:health": {
+        "value": 999999,
+        "max": 999999
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "entity_attack",
+            "deals_damage": true
+          },
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:physics": {
+        "has_gravity": false
+      },
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 0.5
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:inventory": {
+        "container_type": "inventory",
+        "inventory_size": 27,
+        "restrict_to_owner": false,
+        "private": false
+      }
+    }
+  }
+}

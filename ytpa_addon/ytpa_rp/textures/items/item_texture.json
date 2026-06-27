@@ -1,0 +1,12 @@
+{
+  "texture_name": "atlas.items",
+  "resource_pack_name": "YTPA",
+  "texture_data": {
+    "ytpa:hammer": {
+      "textures": "textures/items/hammer"
+    },
+    "ytpa:wardrobe": {
+      "textures": "textures/items/wardrobe"
+    }
+  }
+}
